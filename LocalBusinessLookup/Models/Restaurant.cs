@@ -10,7 +10,7 @@ namespace LocalBusinessLookup.Models
     public string Name { get; set; }
     [Required]
     [StringLength(50)]
-    public string Cuisine {get; set; }
+    public string Cuisine { get; set; }
     [Phone]
     public string PhoneNumber { get; set; }
     public string Address { get; set; }
