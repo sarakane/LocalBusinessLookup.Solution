@@ -19,6 +19,9 @@ namespace LocalBusinessLookup.Controllers
     }
 
     // GET api/Shops
+    /// <summary>
+    /// Gets all shops
+    /// </summary>
     [HttpGet]
     public ActionResult<IEnumerable<Shop>> Get()
     {
@@ -26,6 +29,9 @@ namespace LocalBusinessLookup.Controllers
     }
 
     // GET api/Shops/2
+    /// <summary>
+    /// Gets the shop with the specified id
+    /// </summary>
     [HttpGet("{id}")]
     public ActionResult<Shop> Get(int id)
     {
@@ -33,6 +39,9 @@ namespace LocalBusinessLookup.Controllers
     }
 
     // POST api/Shops
+    /// <summary>
+    /// Creates a shop
+    /// </summary>
     [HttpPost]
     public void Post([FromBody] Shop shop)
     {
@@ -41,6 +50,9 @@ namespace LocalBusinessLookup.Controllers
     }
 
     // PUT api/Shops/2
+    /// <summary>
+    /// Edits the shop with the specified id
+    /// </summary>
     [HttpPut("{id}")]
     public void Put(int id, [FromBody] Shop shop)
     {
@@ -50,6 +62,9 @@ namespace LocalBusinessLookup.Controllers
     }
 
     // DELETE api/Shops/2
+    /// <summary>
+    /// Deletes the shop with the specified id
+    /// </summary>
     [HttpDelete("{id}")]
     public void Delete(int id)
     {

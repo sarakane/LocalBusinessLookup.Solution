@@ -29,7 +29,7 @@ namespace LocalBusinessLookup.Controllers
 
     // GET api/restaurants/2
     /// <summary>
-    /// Gets a restaurant by specified id
+    /// Gets a restaurant with the specified id
     /// </summary>
     [HttpGet("{id}")]
     public ActionResult<Restaurant> Get(int id)
@@ -64,7 +64,7 @@ namespace LocalBusinessLookup.Controllers
 
     // PUT api/restaurants/2
     /// <summary>
-    /// Edits a restaurant by specified id
+    /// Edits the restaurant with the specified id
     /// </summary>
     [HttpPut("{id}")]
     public void Put(int id, [FromBody] Restaurant restaurant)
@@ -76,7 +76,7 @@ namespace LocalBusinessLookup.Controllers
 
     // DELETE api/restaurants/2
     /// <summary>
-    /// Deletes the specified restaurant
+    /// Deletes the restaurant with the specified id
     /// </summary>
     [HttpDelete("{id}")]
     public void Delete(int id)
